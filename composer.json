@@ -1,0 +1,19 @@
+{
+  "name": "setbased/abc-exception-handler",
+  "description": "ABC-Framework: Exception Handler",
+  "keywords": [
+    "ABC-Framework",
+    "Exception",
+    "Handler"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SetBased\\Abc\\ExceptionHandler\\": "src/"
+    }
+  }
+}
