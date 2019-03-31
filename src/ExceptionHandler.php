@@ -19,7 +19,7 @@ interface ExceptionHandler
    * @since 1.0.0
    * @api
    */
-  public function handleConstructorException(\Throwable $exception): void;
+  public function handleConstructException(\Throwable $exception): void;
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
