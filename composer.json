@@ -1,19 +1,18 @@
 {
-  "name": "setbased/abc-exception-handler",
-  "description": "ABC-Framework: Exception Handler",
+  "name": "plaisio/exception-handler",
+  "description": "PhpPlaisio: Exception Handler",
   "keywords": [
-    "ABC-Framework",
+    "PhpPlaisio",
     "Exception",
     "Handler"
   ],
-  "type": "library",
   "license": "MIT",
   "require": {
     "php": ">=7.1.0"
   },
   "autoload": {
     "psr-4": {
-      "SetBased\\Abc\\ExceptionHandler\\": "src/"
+      "Plaisio\\ExceptionHandler\\": "src/"
     }
   }
 }
