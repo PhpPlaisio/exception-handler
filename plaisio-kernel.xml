@@ -1,0 +1,9 @@
+<kernel>
+    <properties>
+        <property>
+            <type>\Plaisio\ExceptionHandler\ExceptionHandler</type>
+            <name>exceptionHandler</name>
+            <description>The exception handler.</description>
+        </property>
+    </properties>
+</kernel>
