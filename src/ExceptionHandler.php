@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 namespace Plaisio\ExceptionHandler;
 
+use Plaisio\Response\Response;
+
 /**
  * Interface for exception handlers.
  */
@@ -14,12 +16,12 @@ interface ExceptionHandler
    *
    * @param \Throwable $exception The exception.
    *
-   * @return void
+   * @return Response
    *
    * @since 1.0.0
    * @api
    */
-  public function handleConstructException(\Throwable $exception): void;
+  public function handleConstructException(\Throwable $exception): Response;
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
@@ -27,12 +29,12 @@ interface ExceptionHandler
    *
    * @param \Throwable $exception The exception.
    *
-   * @return void
+   * @return Response
    *
    * @since 1.0.0
    * @api
    */
-  public function handleFinalizeException(\Throwable $exception): void;
+  public function handleFinalizeException(\Throwable $exception): Response;
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
@@ -40,12 +42,12 @@ interface ExceptionHandler
    *
    * @param \Throwable $exception The exception.
    *
-   * @return void
+   * @return Response
    *
    * @since 1.0.0
    * @api
    */
-  public function handlePrepareException(\Throwable $exception): void;
+  public function handlePrepareException(\Throwable $exception): Response;
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
@@ -53,12 +55,12 @@ interface ExceptionHandler
    *
    * @param \Throwable $exception The exception.
    *
-   * @return void
+   * @return Response
    *
    * @since 1.0.0
    * @api
    */
-  public function handleResponseException(\Throwable $exception): void;
+  public function handleResponseException(\Throwable $exception): Response;
 
   //--------------------------------------------------------------------------------------------------------------------
 }
